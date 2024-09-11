@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #717171;
+  }
+  
+  .carousel-container {
+    width: 1200px;
+    margin: 0 auto;
+    height: 510px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+  }
+  
+  #prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color:#a2a2a2;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 15px;
+  }
+  
+  #prevBtn {
+    left: 10px;
+  }
+  
+  #nextBtn {
+    right: 10px;
+  }
+  
+  /* Styling for the dots */
+  .carousel-dots {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dot.active {
+    background-color: #f2f2f2;
+  }
+  
